@@ -114,6 +114,8 @@ GmapsCompleter = (function() {
     if (!this.debugOn) {
       return;
     }
+    when label == "updateAdr";
+    obj = obj.split(",").slice(0,-1).join();
     return console.log(label, obj);
   };
 
